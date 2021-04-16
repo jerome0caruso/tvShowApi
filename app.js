@@ -13,7 +13,7 @@ form.addEventListener('submit', async function(e) {
 })
 
 async function apiCall(userInput) {
-    const config = { params: { q: userInput, isFunny: 'some other query para  m' } }
+    const config = { params: { q: userInput } }
     const response = await axios.get('https://api.tvmaze.com/search/shows', config);
     return response;
 }
